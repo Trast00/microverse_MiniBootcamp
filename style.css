@@ -15,6 +15,15 @@ nav .left, .right {
     width: 60%;
     align-items: center;
 }
+nav .left{
+    padding-left: 8px;
+}
+
+nav .left img{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
 nav .mid, form{
     display: flex;
     width: 100%;
@@ -29,6 +38,11 @@ nav .mid input{
     border: 1px solid #CCCCCC;
     
 }
+nav .mid input:focus-within{
+    border-radius: 0px;
+    border: 1px solid #CCCCCC;
+    outline: none;
+}
 nav .mid button{
     width: 39px;
     height: 39px;
@@ -36,7 +50,12 @@ nav .mid button{
     border: none;
     margin-left: 8px;
     background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
 nav .mid form button{
     width: 60px;
     height: 39px;
@@ -54,6 +73,7 @@ nav .right{
 nav .right p{
     width: 40px;
     height: 40px;
+    cursor: pointer;
     font-size: 20px;
     color: white;
     display: flex;
@@ -63,6 +83,11 @@ nav .right p{
     border-radius: 50%;
     background-color: #7A1FA2;
 }
-nav .fa {
-    color: black
+nav i, img{
+    cursor: pointer;
 }
+nav .right i{
+    margin-right: 24px;
+}
+
+/*==========================================*/
